@@ -1,0 +1,10 @@
+{
+  "name": "awdf-project",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"frontend,backend,mongodb\" -c \"cyan,green,magenta\" \"npm --prefix Frontend run dev -- --host 0.0.0.0 --port 5173\" \"npm --prefix backend/MongoDB/task-manager run start\" \"mongod --dbpath C:/data/db\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
